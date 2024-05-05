@@ -1,44 +1,19 @@
-# analyzing_citation_networks
-Analyze a citation network using graph neural networks
+# OVERVIEW
+This project explores a citation network using classical analysis techniques, community detection, and link prediction.
 
-   - Louvain Method:
-        Type: Modularity-based
-        Description: A popular algorithm that optimizes modularity to find communities in a graph. It is known for its efficiency and effectiveness in detecting communities in large graphs.
+## Classical Analysis
+Classical analysis techniques, such as centrality measures and clustering, were applied to gain insights into the structure and characteristics of the citation network.
 
-   - Label Propagation Algorithm (LPA):
-        Type: Semi-supervised
-        Description: A simple algorithm where nodes adopt the most common label among their neighbors. It's computationally efficient and can be used for large graphs.
+## Community Detection
+Compared Random Walk based methods to Graph Neural Networks for this task and analyzed the differences in the result obtained.
 
-   - Node2Vec:
-        Type: Embedding-based
-        Description: An algorithm that learns embeddings for nodes by performing random walks on the graph. The learned embeddings can be used for community detection tasks.
+## Link Prediction
+Compared Node2Vec algorithm to a Graph Convolutional Network for predicting links in a transductive setting. 
 
-   - GraphSAGE (Graph Sample and Aggregated Embeddings):
-        Type: Graph neural network-based
-        Description: A graph neural network approach that samples and aggregates information from a node's local neighborhood. It can be applied to large graphs for representation learning.
+# REPORT
+The following report summarizes the findings of the project:  
+[Project Report](https://docs.google.com/document/d/1KuNPpCiD1Mef422BbeuSLSiFLOpfyEknoDPRSFULii0/edit?usp=sharing) 
 
-   - DeepWalk:
-        Type: Random walk-based embedding
-        Description: Similar to Node2Vec, DeepWalk generates embeddings by considering random walks in the graph. It is effective for capturing node similarities.
-
-   - Walktrap Algorithm:
-        Type: Hierarchical clustering
-        Description: A hierarchical clustering algorithm based on random walks. It measures the similarity between nodes by the number of shared random walks.
-
-   - Infomap Algorithm:
-        Type: Flow-based
-        Description: An algorithm that models the movement of information through the network to identify densely connected regions. It can uncover hierarchical community structures.
-
-   - Community Detection with Graph Convolutional Networks (GCN):
-        Type: Graph neural network-based
-        Description: Utilizing graph convolutional layers to learn node representations and uncover community structures. It's effective for capturing complex relationships in large graphs.
-
-   - SCAN (Structural Clustering Algorithm for Networks):
-        Type: Structural
-        Description: An algorithm that identifies clusters based on the structural roles of nodes in the network. It can uncover both overlapping and non-overlapping communities.
-
-   - Leading Eigenvector Method:
-        Type: Spectral
-        Description: Based on the spectral properties of the graph's adjacency matrix. It uses the leading eigenvector to partition nodes into communities.
-
-
+# DATASET
+The Stanford high-energy physics citation network was used for this project. You can access the dataset below:  
+[Dataset](https://snap.stanford.edu/data/cit-HepPh.html)  
